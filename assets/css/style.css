@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  padding: 5px 67px 7px 13px;
+}
+
+.header__nav li {
+  display: inline-block;
+  margin-top: 10.5px;
+  vertical-align: -webkit-baseline-middle;
+  padding: 0 7px 0 15px;
+  border-left: 1px solid;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.header__nav li:last-child {
+  border-right: 1px solid;
+  padding-right: 15px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__nav a:hover {
+  color: #999999;
+}
+
+.header__img {
+  padding-top: 10px;
+  width: 125px;
+  margin-left: auto;
+}
+
+body.index {
+  text-align: center;
+  height: 100vh;
+}
+
+body.index .top {
+  width: 530px;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+body.index .top__mark {
+  padding-top: 250px;
+  padding-bottom: 38px;
+}
+
+body.index .top__nav {
+  padding-top: 21.5px;
+}
+
+body.index .top__nav li {
+  font-size: 14px;
+  display: inline-block;
+  padding: 0 7px 0 15px;
+  border-left: 1px solid;
+}
+
+body.index .top__nav li:last-child {
+  border-right: 1px solid;
+  padding-right: 15px;
+}
+
+body.index .top__nav li a {
+  text-decoration: none;
+  color: #231815;
+  letter-spacing: 0.1em;
+}
+
+body.index .top__nav li a:hover {
+  color: #999999;
+}
+
+body.index .footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+body.philosophy .content {
+  text-align: center;
+}
+
+body.philosophy .content img {
+  width: 237px;
+  height: auto;
+  padding-top: 105px;
+  padding-bottom: 50px;
+}
+
+body.philosophy .content p {
+  line-height: 1.8;
+  font-size: 16px;
+  letter-spacing: 0.055em;
+  padding-bottom: 37px;
+}
+
+body.philosophy .content p:nth-child(4) {
+  padding-bottom: 100px;
+}
+
+body.philosophy .content p:nth-child(5) {
+  font-size: 14px;
+}
+
+body.philosophy .content p:last-child {
+  padding-bottom: 110px;
+}
+
+body.staff {
+  text-align: center;
+}
+
+body.staff .employee h1 {
+  padding-top: 105px;
+  padding-bottom: 110px;
+}
+
+body.staff .employee dt {
+  font-size: 5px;
+  padding-bottom: 16px;
+  letter-spacing: 0.3em;
+}
+
+body.staff .employee a {
+  text-decoration: none;
+  color: #231815;
+  letter-spacing: 0.4em;
+}
+
+body.staff .employee a:hover {
+  color: #5A5250;
+}
+
+body.staff .employee dd:nth-child(1) {
+  font-size: 42px;
+}
+
+body.staff .employee dd:nth-child(2) {
+  font-size: 15px;
+  padding-top: 12px;
+}
+
+body.staff .employee__mark {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+body.staff .employee__mark img {
+  width: 1.2%;
+}
+
+body.company {
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  line-height: 1.8em;
+}
+
+body.company .company__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body.company h1 {
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 65px;
+}
+
+body.company .ja {
+  float: left;
+  text-align: left;
+}
+
+body.company .en {
+  float: right;
+  text-align: left;
+}
+
+body.company td {
+  padding-bottom: 16px;
+  padding-left: 50px;
+}
+
+body.works .works__wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body.works .works__wrap p {
+  font-size: 14px;
+  padding-top: 65px;
+  letter-spacing: 0.3em;
+}
+
+body.works .works__wrap h1 {
+  font-size: 35px;
+  padding-top: 16px;
+  padding-bottom: 42px;
+  letter-spacing: 0.4em;
+}
+
+body.works .works__box {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body.works .works__box a {
+  height: 100%;
+}
+
+body.works .works__box li {
+  position: relative;
+  color: #fff;
+}
+
+body.works .works__box div {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(45, 46, 46, 0.6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body.works .works__box p {
+  text-align: center;
+}
+
+body.works .works__list {
+  margin-bottom: 22px;
+  margin-right: 22px;
+}
+
+body.works th, body.works td {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+body.works td {
+  padding-left: 14px;
+}
+
+body.works .lifework {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+body.works .lifework a {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0D0D0D;
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+}
+/*# sourceMappingURL=style.css.map */

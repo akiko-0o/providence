@@ -1,0 +1,35 @@
+.header {
+    background-color: #333333;
+    display: flex;
+    &__logo {
+        padding: 5px 67px 7px 13px;
+    }
+    &__nav {
+        li {
+            display: inline-block;
+            margin-top: 10.5px;
+            vertical-align: -webkit-baseline-middle;
+            padding: 0 7px 0 15px;
+            border-left: 1px solid;
+            color: #ffffff;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            &:last-child {
+                border-right: 1px solid;
+                padding-right: 15px;
+            }   
+        }
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            &:hover {
+                color: #999999;
+            }
+        }
+    }
+    &__img {
+        padding-top: 10px;
+        width: 125px;
+        margin-left: auto;
+    }
+}
