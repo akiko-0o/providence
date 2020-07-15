@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画「帝一の國」｜PROVIDENCE</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body class="slick">
+    <header class="header">
+        <div class="header__logo">
+            <a href="/">
+                <img src="/assets/img/white-logo.svg" alt="providence" onmouseover="this.src='/assets/img/on.svg'" onmouseout="this.src='/assets/img/white-logo.svg'">
+            </a>
+        </div>
+        <ul class="header__nav">
+            <li>
+                <a href="/philosophy/index.html">PHILOSOPHY</a>
+            </li>
+            <li>
+                <a href="../staff/index.html">STAFF</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+            <li>
+                <a href="../company/index.html">COMPANY</a>
+            </li>
+            <li>
+                <a href="#">NEWS</a>
+            </li>
+        </ul>
+        <div class="header__img">
+            <img src="../assets/img/f.svg" alt="">
+        </div>
+    </header>
+
+    <main class="slick__wrap">
+        <p>ART DIRECTOR</p>
+        <h1>NAOKO HARADA</h1>
+        <ul class="single-item">
+            <li>
+                <img src="../assets/img/hiroshi_img/movie_01.png" alt="">
+            </li>
+            <li>
+                <img src="../assets/img/hiroshi_img/movie_02.png" alt="">
+            </li>
+        </ul>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+<script>
+$(function(){
+$('.single-item').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    fade: true,
+    speed: 600,
+    infinite: false,
+    prevArrow: '<span class="prev-arrow"></span>',
+    nextArrow: '<span class="next-arrow">Next</span>',
+
+});
+});
+</script>
+
+          
+</body>
+</html>
