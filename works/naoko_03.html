@@ -64,16 +64,18 @@ $('.single-item').slick({
     dots: false,
     fade: true,
     speed: 600,
-    infinite: false,
+    // infinite: false,
     prevArrow: '<span class="prev-arrow"></span>',
     nextArrow: '<span class="next-arrow">Next</span>',
     });
 
     function change() {
-    (".nextArrow").innerHTML = '<a href="naoko.html">Works Index</a>';
-    document.getElementById('target-image').addEventListener("load", change);
-    window.setTimeout("change", "3000");
-    }
+        var greet = document.getElementsByClassName('next-arrow');
+        greet.innerHTML = '<a href="naoko.html">Works Index</a>';
+        document.getElementById('target-image').addEventListener("load", change);
+        window.setTimeout("change", "3000");
+    };
+
     
 });
 </script>

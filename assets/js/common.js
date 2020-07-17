@@ -16,10 +16,5 @@ $(function(){
             $(this).parent("div").remove();
         });
     });
-    $(".link").click(function(){
-        $("changed").click();
-      });
-
-      
     
 });
