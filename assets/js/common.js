@@ -16,5 +16,25 @@ $(function(){
             $(this).parent("div").remove();
         });
     });
+
+
+    $('.single-item').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        fade: true,
+        speed: 600,
+        infinite: false,
+        prevArrow: '<span class="prev-arrow"></span>',
+        nextArrow: '<span class="next-arrow">Next</span>',
+        });
+    
+    
+    
+        $('.next-arrow').on('click', function(){
+      if ($(this).hasClass('slick-disabled')){
+        this.innerHTML = '<a href="naoko.html">Works Index</a>';
+      }
+    })
     
 });

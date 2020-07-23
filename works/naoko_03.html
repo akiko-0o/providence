@@ -47,7 +47,7 @@
                 <img src="../assets/img/hiroshi_img/kanbotu_01.png" alt="">
             </li>
             <li>
-                <img src="../assets/img/naoko_img/naoko_02.png" alt="" id="target-image">
+                <img src="../assets/img/naoko_img/naoko_02.png" alt="">
             </li>
         </ul>
     </main>
@@ -55,30 +55,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-<script>
-$(function(){
-$('.single-item').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: false,
-    fade: true,
-    speed: 600,
-    // infinite: false,
-    prevArrow: '<span class="prev-arrow"></span>',
-    nextArrow: '<span class="next-arrow">Next</span>',
-    });
+    <script src="../assets/js/common.js"></script>
 
-    function change() {
-        var greet = document.getElementsByClassName('next-arrow');
-        greet.innerHTML = '<a href="naoko.html">Works Index</a>';
-        document.getElementById('target-image').addEventListener("load", change);
-        window.setTimeout("change", "3000");
-    };
-
-    
-});
-</script>
 
           
 </body>
