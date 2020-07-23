@@ -411,4 +411,10 @@ body.slick span {
   padding-bottom: 1px;
   font-size: 12px;
 }
+
+body.slick .worksindex {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */

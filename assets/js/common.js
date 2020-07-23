@@ -33,7 +33,7 @@ $(function(){
     
         $('.next-arrow').on('click', function(){
       if ($(this).hasClass('slick-disabled')){
-        this.innerHTML = '<a href="naoko.html">Works Index</a>';
+        this.innerHTML = '<a href="javascript:history.back()">Works Index</a>';
       }
     })
     
