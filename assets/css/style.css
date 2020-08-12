@@ -67,6 +67,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo {
@@ -75,7 +81,6 @@ a {
 
 .header__nav li {
   display: inline-block;
-  margin-top: 10.5px;
   vertical-align: -webkit-baseline-middle;
   padding: 0 7px 0 15px;
   border-left: 1px solid;
@@ -104,49 +109,47 @@ a {
   margin-left: auto;
 }
 
-body.index {
+.index {
   text-align: center;
   height: 100vh;
 }
 
-body.index .top {
+.index .top {
   width: 530px;
-  margin: 0 auto;
-  margin: 0 auto;
+  margin: 250px auto 0;
 }
 
-body.index .top__mark {
-  padding-top: 250px;
+.index .top__mark {
   padding-bottom: 38px;
 }
 
-body.index .top__nav {
+.index .top__nav {
   padding-top: 21.5px;
 }
 
-body.index .top__nav li {
+.index .top__nav li {
   font-size: 14px;
   display: inline-block;
   padding: 0 7px 0 15px;
   border-left: 1px solid;
 }
 
-body.index .top__nav li:last-child {
+.index .top__nav li:last-child {
   border-right: 1px solid;
   padding-right: 15px;
 }
 
-body.index .top__nav li a {
+.index .top__nav li a {
   text-decoration: none;
   color: #231815;
   letter-spacing: 0.1em;
 }
 
-body.index .top__nav li a:hover {
+.index .top__nav li a:hover {
   color: #999999;
 }
 
-body.index .footer {
+.index .footer {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -154,154 +157,163 @@ body.index .footer {
   padding-bottom: 10px;
 }
 
-body.philosophy .content {
+.philosophy .content {
+  margin-top: 105px;
   text-align: center;
 }
 
-body.philosophy .content img {
+.philosophy .content img {
   width: 237px;
   height: auto;
-  padding-top: 105px;
   padding-bottom: 50px;
 }
 
-body.philosophy .content p {
+.philosophy .content p {
   line-height: 1.8;
   font-size: 16px;
   letter-spacing: 0.055em;
   padding-bottom: 37px;
 }
 
-body.philosophy .content p:nth-child(4) {
+.philosophy .content p:nth-child(4) {
   padding-bottom: 100px;
 }
 
-body.philosophy .content p:nth-child(5) {
+.philosophy .content p:nth-child(5) {
   font-size: 14px;
 }
 
-body.philosophy .content p:last-child {
+.philosophy .content p:last-child {
   padding-bottom: 110px;
 }
 
-body.staff {
+.staff {
   text-align: center;
 }
 
-body.staff .employee h1 {
+.staff .employee h1 {
   padding-top: 105px;
   padding-bottom: 110px;
 }
 
-body.staff .employee dt {
+.staff .employee h3 {
   font-size: 5px;
   padding-bottom: 16px;
   letter-spacing: 0.3em;
 }
 
-body.staff .employee a {
+.staff .employee a {
   text-decoration: none;
   color: #231815;
   letter-spacing: 0.4em;
 }
 
-body.staff .employee a:hover {
+.staff .employee a:hover {
   color: #5A5250;
 }
 
-body.staff .employee dd:nth-child(1) {
+.staff .employee p {
   font-size: 42px;
 }
 
-body.staff .employee dd:nth-child(2) {
+.staff .employee span {
+  display: block;
   font-size: 15px;
   padding-top: 12px;
 }
 
-body.staff .employee__mark {
+.staff .employee__name {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.staff .employee__mark {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-body.staff .employee__mark img {
+.staff .employee__mark img {
   width: 1.2%;
 }
 
-body.company {
+.company {
   font-size: 12.5px;
   letter-spacing: 0.05em;
   line-height: 1.8em;
 }
 
-body.company .company__inner {
+.company .company__inner {
   max-width: 800px;
   margin: 0 auto;
 }
 
-body.company h1 {
+.company h1 {
   text-align: center;
   padding-top: 102px;
   padding-bottom: 65px;
 }
 
-body.company .ja {
+.company .ja {
   float: left;
   text-align: left;
 }
 
-body.company .en {
+.company .en {
   float: right;
   text-align: left;
 }
 
-body.company td {
+.company td {
   padding-bottom: 16px;
   padding-left: 50px;
 }
 
-body.works {
+.works {
   /*slick setting*/
 }
 
-body.works .works__wrap {
+.works .works__wrap {
   max-width: 800px;
   margin: 0 auto;
 }
 
-body.works .works__wrap p {
+.works .works__wrap span {
   font-size: 14px;
   padding-top: 65px;
   letter-spacing: 0.3em;
 }
 
-body.works .works__wrap h1 {
+.works .works__wrap h1 {
   font-size: 35px;
   padding-top: 16px;
   padding-bottom: 42px;
   letter-spacing: 0.4em;
 }
 
-body.works .works__box {
+.works .works__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-body.works .works__box:first-child {
+.works .works__box:first-child {
   margin-top: 50px;
 }
 
-body.works .works__box a {
+.works .works__box a {
   height: 100%;
   z-index: 99;
 }
 
-body.works .works__box li {
+.works .works__box li {
   position: relative;
   color: #fff;
+  width: calc(100% / 4 - 22px);
 }
 
-body.works .works__box div {
+.works .works__box div {
   position: absolute;
   display: none;
   width: 100%;
@@ -313,40 +325,40 @@ body.works .works__box div {
           box-sizing: border-box;
 }
 
-body.works .works__box p {
+.works .works__box p {
   text-align: center;
 }
 
-body.works .works__list {
+.works .works__list {
   margin-bottom: 22px;
   margin-right: 22px;
 }
 
-body.works .works__list img {
+.works .works__list img {
   width: 183px;
   height: 143px;
 }
 
-body.works table {
+.works table {
   margin-bottom: 50px;
 }
 
-body.works th, body.works td {
+.works th, .works td {
   font-size: 13px;
   padding-bottom: 10px;
 }
 
-body.works td {
+.works td {
   padding-left: 14px;
 }
 
-body.works .lifework {
+.works .lifework {
   padding-top: 50px;
   padding-bottom: 100px;
   text-align: center;
 }
 
-body.works .lifework a {
+.works .lifework a {
   font-size: 9px;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -356,63 +368,67 @@ body.works .lifework a {
   padding-bottom: 3px;
 }
 
-body.works .link {
+.works .link {
   pointer-events: none;
 }
 
-body.works .fade {
+.works .link p {
+  margin-top: 60px;
+}
+
+.works .fade {
   margin: 100px auto;
   width: 80%;
 }
 
-body.works .fade img {
+.works .fade img {
   height: auto;
   width: 100%;
 }
 
-body.works .slick-prev:before,
-body.works .slick-next:before {
+.works .slick-prev:before,
+.works .slick-next:before {
   color: #000;
 }
 
-body.slick .slick__wrap {
+.slick .slick__wrap {
   max-width: 796px;
   margin: 0 auto;
   padding-top: 40px;
 }
 
-body.slick .slick__wrap img {
+.slick .slick__wrap img {
   width: 100%;
   height: 495px;
 }
 
-body.slick .slick__wrap p {
+.slick .slick__wrap p {
   font-size: 10px;
   letter-spacing: 0.38em;
   padding-bottom: 15px;
 }
 
-body.slick .slick__wrap h1 {
+.slick .slick__wrap h1 {
   font-size: 25px;
   letter-spacing: 0.45em;
   padding-bottom: 40px;
 }
 
-body.slick .single-item {
+.slick .single-item {
   text-align: center;
 }
 
-body.slick .single-item li {
+.slick .single-item li {
   padding-bottom: 30px;
 }
 
-body.slick span {
+.slick span {
   border-bottom: 1px solid;
   padding-bottom: 1px;
   font-size: 12px;
 }
 
-body.slick .worksindex {
+.slick .worksindex {
   display: block;
   text-align: center;
   text-decoration: underline;

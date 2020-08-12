@@ -1,11 +1,11 @@
-body.staff {
+.staff {
     text-align: center;
     .employee{
         h1 {
             padding-top: 105px;
             padding-bottom: 110px;
         }
-        dt {
+        h3 {
             font-size: 5px;
             padding-bottom: 16px;
             letter-spacing: 0.3em;
@@ -18,15 +18,20 @@ body.staff {
                 color: #5A5250;
             }
         }
-        dd {
-            &:nth-child(1){
-                font-size: 42px;
-            }
-            &:nth-child(2){
-                font-size: 15px;
-                padding-top: 12px;
-            }
+        p {
+            font-size: 42px;
         }
+        span{
+            display: block;
+            font-size: 15px;
+            padding-top: 12px;
+        }
+
+        &__name {
+            width: 300px;
+            margin: 0 auto;
+        }
+
         &__mark {
             padding-top: 50px;
             padding-bottom: 50px;

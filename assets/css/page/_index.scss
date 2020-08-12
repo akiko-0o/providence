@@ -1,12 +1,10 @@
-body.index {    
+.index {    
     text-align: center;
     height: 100vh;
     .top {
         width: 530px;
-        margin: 0 auto;
-        margin: 0 auto;
+        margin:  250px auto 0;
         &__mark {
-            padding-top: 250px;
             padding-bottom: 38px;
         }
         &__nav {

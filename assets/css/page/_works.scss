@@ -1,9 +1,9 @@
-body.works {
+.works {
 
     .works__wrap {
         max-width: 800px;
         margin: 0 auto;
-        p {
+        span {
             font-size: 14px;
             padding-top: 65px;
             letter-spacing: 0.3em;
@@ -16,10 +16,11 @@ body.works {
         }
     }
     .works__box{
+        display: flex;
+        flex-wrap: wrap;
         &:first-child {
             margin-top: 50px;
         }
-        display: flex;
         a {
             height: 100%;
             z-index: 99;
@@ -27,6 +28,7 @@ body.works {
         li {
             position: relative;
             color: #fff;
+            width: calc(100% / 4 - 22px);
         }
         div {
             position: absolute;
@@ -77,6 +79,9 @@ body.works {
 
     .link {
         pointer-events: none;
+        p {
+            margin-top: 60px;
+        }
     }
 
     .fade{

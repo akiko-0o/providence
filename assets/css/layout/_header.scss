@@ -1,13 +1,14 @@
 .header {
     background-color: #333333;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     &__logo {
         padding: 5px 67px 7px 13px;
     }
     &__nav {
         li {
             display: inline-block;
-            margin-top: 10.5px;
             vertical-align: -webkit-baseline-middle;
             padding: 0 7px 0 15px;
             border-left: 1px solid;
